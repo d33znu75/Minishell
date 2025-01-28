@@ -49,7 +49,7 @@ void	process_input(char **env, struct termios term, int syntax, int *s_save)
 	{
 		initialize_signals();
 		1 && (syntax = 0, input = NULL);
-		input = readline("\033[31mroot$ \033[0m");
+		input = readline("minibash$ ");
 		if (input == NULL)
 			ctrl_d_handler(env);
 		else
